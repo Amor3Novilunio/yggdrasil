@@ -38,7 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "content/codex/about-me.mdx"  ],
   "exclude": [
     "node_modules"
   ]
