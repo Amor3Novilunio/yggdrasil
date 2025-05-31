@@ -106,7 +106,7 @@ export default function HomePage() {
         {/*  */}
         <section className="w-[80%] 2xl:w-[70%] flex flex-col items-center justify-center gap-5 ">
           <h2 className="font-quicksand font-semibold">
-            Knowledge Branches ( Skills & References )
+            Knowledge Branches ( Skills, Tools & References )
           </h2>
           {/* Skill Logo And Navigation to Documentation */}
           <div className="flex flex-wrap w-full gap-5 items-center justify-center">

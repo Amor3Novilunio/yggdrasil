@@ -1,5 +1,4 @@
 import { Timeline, t_Timeline } from "@/ui/aceternity_Timeline";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +9,7 @@ export function CareerJourneyTimeline() {
       subTitle: (
         <div className="mt-5">
           <h5 className="text-xl ">
-            {new Date().getFullYear() - new Date("2024").getFullYear()} Years
+            {new Date().getFullYear() - new Date("2024").getFullYear()} Year
           </h5>
           <div className="mt-2">
             <h6 className="text-base">Frontend Developer</h6>
@@ -23,19 +22,77 @@ export function CareerJourneyTimeline() {
       ),
       content: (
         <>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Leading the development of the frontend for a key project, ensuring
-            a smooth and intuitive user experience.
-            <br />
-            <br /> Analyzing project requirements and crafting tailored frontend
-            solutions.
-            <br />
-            <br /> Integrating the frontend with backend services to enable
-            seamless data interaction.
-            <br />
-            <br /> Creating clear documentation to support frontend development
-            and ongoing project maintenance.
-          </p>
+          <h6 className="font-semibold">Tech Stack</h6>
+          <div className="flex flex-wrap gap-5 text-sm mt-2">
+            <Link
+              key={"react"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              React
+            </Link>
+            <Link
+              key={"fumaDocs"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              FumaDocs
+            </Link>
+            <Link
+              key={"tailwindCSS"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              TailwindCSS
+            </Link>
+            <Link
+              key={"CSS3"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              CSS3
+            </Link>
+            <Link
+              key={"Zustand"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              Zustand
+            </Link>
+            <Link
+              key={"Tanstack/Query"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              Tanstack/Query
+            </Link>
+            <Link
+              key={"Next JS"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              Next JS
+            </Link>
+          </div>
+          <ul className="text-sm">
+            <li>Web3 Wallet Integration</li>
+            <li>
+              Spearheading the frontend development of a key project, ensuring
+              smooth and intuitive user experiences.
+            </li>
+            <li>
+              Analyzing project requirements and crafting scalable, maintainable
+              frontend solutions.
+            </li>
+            <li>
+              Integrating seamlessly with backend services to enable efficient
+              data flow and interactions.
+            </li>
+            <li>
+              Maintaining clear documentation to support onboarding and
+              continuous development.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -53,37 +110,26 @@ export function CareerJourneyTimeline() {
         </div>
       ),
       content: (
-        <div className="grid">
-          image of Vixor Here
-          {/* <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            /> */}
-        </div>
+        <>
+          <ul className="text-sm">
+            <li>
+              Architected and implemented the entire frontend of a major project
+              as the sole developer.
+            </li>
+            <li>
+              Designed a modular, reusable component system for streamlined
+              development and long-term scalability.
+            </li>
+            <li>
+              Integrated APIs and built UI flows aligned with real-world user
+              behavior and client expectations.
+            </li>
+            <li>
+              Ensured performance and accessibility standards across devices and
+              screen sizes.
+            </li>
+          </ul>
+        </>
       ),
     },
     {
@@ -105,7 +151,52 @@ export function CareerJourneyTimeline() {
       ),
       content: (
         <>
-          <ul>
+          <h6 className="font-semibold">Tech Stack</h6>
+          <div className="flex flex-wrap gap-5 text-sm mt-2">
+            <Link
+              key={"react"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              React
+            </Link>
+            <Link
+              key={"php"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              PHP
+            </Link>
+            <Link
+              key={"mySQL"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              MySQL
+            </Link>
+            <Link
+              key={"bootStrap"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              BootStrap
+            </Link>
+            <Link
+              key={"nodeJS"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              NodeJS
+            </Link>
+            <Link
+              key={"css"}
+              href={"#"}
+              className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
+            >
+              CSS
+            </Link>
+          </div>
+          <ul className="text-sm">
             <li>
               Worked across multiple projects, developing features with both
               frontend and backend integration.
@@ -141,71 +232,10 @@ export function CareerJourneyTimeline() {
       ),
       content: (
         <>
-          <ul>
+          <ul className="text-sm">
             <li>First full-time software job at Sparksoft Solutions.</li>
             <li>
               Gained hands-on experience with software development workflows.
-            </li>
-            <li className="">
-              Learned key technologies like
-              <div className="flex flex-wrap gap-5 p-2">
-                <Link
-                  key={"react"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  React
-                </Link>
-                <Link
-                  key={"php"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  PHP
-                </Link>
-                <Link
-                  key={"mySQL"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  MySQL
-                </Link>
-                <Link
-                  key={"bootStrap"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  BootStrap
-                </Link>
-                <Link
-                  key={"nodeJS"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  NodeJS
-                </Link>
-                <Link
-                  key={"css"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  CSS
-                </Link>
-                <Link
-                  key={"git"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  Git
-                </Link>
-                <Link
-                  key={"trello"}
-                  href={"#"}
-                  className="px-5 rounded-full shadow hover:shadow-inner hover:bg-gray-200 duration-200 dark:bg-white/10 dark:hover:bg-gray-200/50 no-underline"
-                >
-                  Trello
-                </Link>
-              </div>
             </li>
             <li>
               Overcame challenges in remote collaboration and version control.
